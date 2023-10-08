@@ -1,10 +1,10 @@
 ### Hi there 👋
+![](https://raw.githubusercontent.com/renky1025/gographql/output/github-contribution-grid-snake.svg)
 
 <!--
 **renky1025/renky1025** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
-![](https://raw.githubusercontent.com/renky1025/gographql/output/github-contribution-grid-snake.svg)
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
