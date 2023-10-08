@@ -2,8 +2,6 @@
 
 ![](https://raw.githubusercontent.com/renky1025/gographql/output/github-contribution-grid-snake.svg)
 
-![](https://raw.githubusercontent.com/renky1025/gographql/output/github-contribution-grid-snake.svg)
-
 
 **renky1025/renky1025** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
