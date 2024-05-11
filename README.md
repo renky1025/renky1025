@@ -1,6 +1,6 @@
 ## 我是renky
 
-- 🌹 I am a backend developer with more then ten years of practice 🐵.
+- 🌹 I am a backend developer with more than ten years of practice 🐵.
 
 
 ### ✨ 我的技能(my skills)   
