@@ -18,15 +18,9 @@
 ![Git](https://img.shields.io/badge/-Git-E84E31?style=flat-square&logo=Git&logoColor=fff)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat-square&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat-square&logo=mongodb&logoColor=white)
-![Agno](https://avatars.githubusercontent.com/u/104874993?s=48&amp;v=4)
+
 
 ## 今年汇总(This year's summary) ✨
 
 <img align="" height="137px" src="https://github-readme-stats.vercel.app/api?username=renky1025&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite&locale=en" />
 <img align="" height="137px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=renky1025&hide_title=true&hide_border=true&layout=compact&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite&locale=en" />
-### 开发的项目(developed projects)
-
-#### mcp
-[MCP](https://github.com/renky1025/cursor-mcp-tools)
-#### multiple-agents
-[Agno-Agent](https://github.com/renky1025/agno-agents)
