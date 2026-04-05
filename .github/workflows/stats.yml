@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main, master ]
   schedule:
-    - cron: "0 */6 * * *"  # 每6小时更新一次
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
@@ -14,15 +14,19 @@ jobs:
       contents: write
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Set up Python 3.12
+    - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.12'
-        architecture: 'x64'
 
-    - uses: actions/cache@v4
+    - name: Cache pip dependencies
+      uses: actions/cache@v4
       with:
         path: ~/.cache/pip
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
@@ -31,29 +35,37 @@ jobs:
 
     - name: Install requirements
       run: |
-        python3 -m pip install --upgrade pip setuptools wheel
+        python3 -m pip install --upgrade pip
         python3 -m pip install -r requirements.txt
 
     - name: Generate images
       run: |
-        python3 --version
+        mkdir -p generated
         python3 generate_images.py
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_ACTOR: ${{ github.actor }}
         EXCLUDED: ${{ secrets.EXCLUDED }}
         EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
         COUNT_STATS_FROM_FORKS: ${{ secrets.COUNT_STATS_FROM_FORKS }}
 
-    - name: Commit to the output branch
+    - name: Commit to output branch
       run: |
         git config --global user.name "github-stats[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add generated/
-        git commit -m 'Generate stats images' || echo "No changes to commit"
+
+        # Save generated files
+        mv generated /tmp/generated
+
+        # Switch to or create output branch
         git checkout output 2>/dev/null || git checkout --orphan output
+
+        # Clean and recreate
         git rm -rf . 2>/dev/null || true
-        git checkout main -- generated/ 2>/dev/null || git checkout master -- generated/
+        rm -rf generated
+        mv /tmp/generated .
+
+        # Commit and push
         git add generated/
-        git commit -m 'Update generated files' || echo "No changes to commit"
+        git commit -m "Update generated files - $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes"
         git push origin output -f
