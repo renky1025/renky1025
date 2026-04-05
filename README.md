@@ -22,5 +22,4 @@
 
 ## 今年汇总(This year's summary) ✨
 
-![R enky's GitHub stats](https://github-readme-stats.vercel.app/api?username=renky1025&show_icons=true&theme=radical)
-
+![YorkRen's Most used languages](https://github-readme-stats.vercel.app/api/top-langs?username=renky1025&show_icons=true&count_private=true&theme=gotham)
