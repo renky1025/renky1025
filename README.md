@@ -1,4 +1,4 @@
-<h1 align="center">Hi there, I'm York Ren 👋</h1>
+<h1 align="center">Hi there, I'm Kangyao Ren 👋</h1>
 
 <p align="center">
   <b>Backend Developer</b> • <b>AI Enthusiast</b> • <b>Visualization Explorer</b>
