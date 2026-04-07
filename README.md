@@ -73,26 +73,13 @@
       <p><i>Resumable, fault-tolerant data migration at scale.</i></p>
     </td>
     <td width="50%">
-      <h3>🔒 <a href="https://github.com/renky1025/autocert">AutoCert</a></h3>
-      <p>Let's Encrypt HTTPS certificate manager</p>
-      <p>Cross-platform, one-click installation with <b>auto-renewal</b></p>
-      <p><i>Simplify SSL/TLS certificate deployment and management.</i></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
       <h3>🎯 <a href="https://github.com/renky1025/pointcloudviewer">PointCloudViewer</a></h3>
       <p>3D Point Cloud visualization tool</p>
       <p>Support for <b>PLY, PCD, TXT</b> formats</p>
       <p><i>Browser-based point cloud rendering and analysis.</i></p>
     </td>
-    <td width="50%">
-      <h3>🤖 <a href="https://github.com/renky1025/agno-agents">Agno Agents</a></h3>
-      <p>Multi-agent system experiments</p>
-      <p>Exploring <b>collaborative AI agents</b> and dry-run simulations</p>
-      <p><i>Orchestrating multiple LLM agents for complex tasks.</i></p>
-    </td>
   </tr>
+
 </table>
 
 ---
