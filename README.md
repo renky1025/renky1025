@@ -53,10 +53,9 @@
 <table>
   <tr>
     <td width="50%">
-      <h3>📰 <a href="https://github.com/renky1025/RssReader">RssReader</a></h3>
-      <p>A modern, self-hosted RSS reader built with <b>Go + React + SQLite</b></p>
-      <p>🌐 <a href="https://fread.coworkai.info">Live Demo</a></p>
-      <p><i>Take control of your news feed with a clean, fast, and distraction-free reading experience.</i></p>
+      <h3>📰 <a href="https://github.com/renky1025/agent-skills">Agent Skills</a></h3>
+      <p>a kinds of skills can run in any agents, totally free.</p>
+      <p><i>This project consists of a series of "Skill" modules designed for Claude Code/Codex/Open Code ...etc, with each Skill serving as an automated solution tailored to a specific scenario.</i></p>
     </td>
     <td width="50%">
       <h3>🔢 <a href="https://github.com/renky1025/mathlab">MathLab</a></h3>
@@ -73,10 +72,8 @@
       <p><i>Resumable, fault-tolerant data migration at scale.</i></p>
     </td>
     <td width="50%">
-      <h3>🎯 <a href="https://github.com/renky1025/pointcloudviewer">PointCloudViewer</a></h3>
-      <p>3D Point Cloud visualization tool</p>
-      <p>Support for <b>PLY, PCD, TXT</b> formats</p>
-      <p><i>Browser-based point cloud rendering and analysis.</i></p>
+      <h3>🎯 <a href="https://github.com/renky1025/YKPlugNova">YKPlugNova</a></h3>
+      <p>YKPlugNova is a Chrome extension toolkit focused on enhancing productivity in content creation, social interaction, and media processing.</p>
     </td>
   </tr>
 
